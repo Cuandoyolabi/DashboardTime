@@ -64,7 +64,6 @@
 }
 
 .card-container-color{
-    background-color: var(--Orange-300);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     position: absolute;
@@ -77,4 +76,28 @@
     position: absolute;
     z-index: 15;
     bottom: 0;
+}
+
+.work-color{
+    background-color: var(--Orange-300);
+}
+
+.play-color{
+    background-color: var(--Blue-300);
+}
+
+.study-color{
+    background-color: var(--Pink-400);
+}
+
+.exercise-color{
+    background-color: var(--Green-400);
+}
+
+.social-color{
+    background-color: var(--Purple-700);
+}
+
+.selfcare-color{
+    background-color: var(--Yellow-300);
 }
