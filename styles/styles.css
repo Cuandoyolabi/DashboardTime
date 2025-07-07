@@ -16,7 +16,7 @@
 --Purple-700: hsl(264, 64%, 52%);
 --Yellow-300: hsl(43, 84%, 65%);
 --Navy-950: hsl(226, 43%, 10%);
---Navy-900: hsla(243, 34%, 22%, 0.758);
+--Navy-900: hsl(243, 34%, 22%);
 --Purple-500: hsl(235, 45%, 61%);
 --Navy-200: hsl(236, 100%, 87%);
 }
@@ -56,4 +56,25 @@
 
 .design{
     background-color: var(--Orange-300);
+}
+
+.card-container{
+    border-radius: 20px;
+    position: relative;
+}
+
+.card-container-color{
+    background-color: var(--Orange-300);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    position: absolute;
+    z-index: 0;
+}
+
+.card-container-footer{
+    background-color: var(--Navy-900);
+    border-radius: 18px;
+    position: absolute;
+    z-index: 15;
+    bottom: 0;
 }
