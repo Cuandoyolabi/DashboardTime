@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Time tracking dashboard</title>
-  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/bootstrap.min.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -14,29 +14,28 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  <main class="flex_container main-container bg-primary">
-    <div class="flex-container bg-primary">
+<body class="body-container">
+  <main class="flex-container">
+    <div class="flex-container">
 
       <!--Contenedor Jeremy-->
-      <div class="flex-container">
-        <div class="fluid-container">
-           <img src="/images/image-jeremy.png" alt="Jeremy Robson" class="profile-image">
-           <p class="text-light">Report for</p>
-           <h3 class="text-light">Jeremy Robson</h3>
+      <div class="flex-container jeremy-container mx-auto mt-5" style="width: 90%; height: 250px;">
+        <div class="fluid-container jeremy-container-header d-flex flex-row justify-content-evenly align-items-center" style="border-radius: 20px; height: 150px;">
+           <img src="/images/image-jeremy.png" alt="Jeremy Robson" class="profile-image img-fluid w-25">
+           <div class="fluid-container d-flex flex-column">
+              <p class="m-0 text-gray">Report for</p>
+              <h3 class="text-light">Jeremy Robson</h3>
+           </div>
         </div>
-        <div class="fluid-container">
-          <p class="text-light">Daily</p>
+        <div class="fluid-container w-100 jeremy-container-footer d-flex flex-row justify-content-around align-items-end pb-4" style="height: 120px;">
+          <p class="text-gray">Daily</p>
           <p class="text-light">Weekly</p>
-          <p class="text-light">Monthly</p>
+          <p class="text-gray">Monthly</p>
         </div>
-       
-
-
       </div>
 
       <!--Work-->
-      <div class="flex-container">
+      <div class="flex-container w-90">
         <div class="fluid-container design"></div>
         <div class="fluid-container">
           <div>
@@ -115,6 +114,6 @@
 
 
   <script src="./script/script.js"></script>
-  <script src="/script/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="./script/bootstrap.min.js"></script>
 </body>
 </html>
