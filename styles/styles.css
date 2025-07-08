@@ -23,6 +23,7 @@
 
 .body-container{
     background-color: var(--Navy-950);
+    position: relative
 }
 
 .jeremy-container{
@@ -100,4 +101,19 @@
 
 .selfcare-color{
     background-color: var(--Yellow-300);
+}
+
+
+@media (min-width: 768px) {
+
+    .jeremy-container{
+        height: 500px;
+        border: 1px solid white;
+    }
+
+    .second-container{
+        display: flex;  
+
+        border: 10px solid white;
+    }
 }
