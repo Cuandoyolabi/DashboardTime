@@ -21,9 +21,13 @@
 --Navy-200: hsl(236, 100%, 87%);
 }
 
+.row{
+    border: 6px solid rgb(255, 0, 0);
+}
+
 .body-container{
     background-color: var(--Navy-950);
-    position: relative
+    position: relative;
 }
 
 .jeremy-container{
@@ -32,7 +36,6 @@
 
 .jeremy-container-header{
     background-color: var(--Purple-600);
-    position: absolute;
     top: 0;
     z-index: 10;
 }
@@ -50,7 +53,6 @@
     background-color: var(--Navy-900);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    position: absolute;
     bottom: 0;
     z-index: 5;
 }
@@ -67,14 +69,12 @@
 .card-container-color{
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    position: absolute;
     z-index: 0;
 }
 
 .card-container-footer{
     background-color: var(--Navy-900);
     border-radius: 18px;
-    position: absolute;
     z-index: 15;
     bottom: 0;
 }
@@ -112,7 +112,6 @@
     }
 
     .second-container{
-        display: flex;  
 
         border: 10px solid white;
     }
