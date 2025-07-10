@@ -31,6 +31,7 @@
 }
 
 .jeremy-container{
+    height: 200px;
     position: relative;
 }
 
@@ -50,6 +51,7 @@
 }
 
 .jeremy-container-footer{
+    height: 100px;
     background-color: var(--Navy-900);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -111,8 +113,22 @@
         border: 1px solid white;
     }
 
-    .second-container{
+    .jeremy-container-header{
+        height: 300px;
 
+    }
+    .jeremy-container-footer{
+        height: 160px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .card-container-footer{
+        height: 250px;
+    }
+
+    .second-container{
+        margin-top: 5%;
         border: 10px solid white;
     }
 }
