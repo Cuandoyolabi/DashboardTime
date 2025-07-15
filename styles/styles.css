@@ -21,9 +21,6 @@
 --Navy-200: hsl(236, 100%, 87%);
 }
 
-.row{
-    border: 6px solid rgb(255, 0, 0);
-}
 
 .body-container{
     background-color: var(--Navy-950);
@@ -31,14 +28,27 @@
 }
 
 .jeremy-container{
-    height: 200px;
+    width: 86%;
+    height: 280px;
+    margin-left: 50px;
     position: relative;
+
 }
 
 .jeremy-container-header{
+    height: 170px;
     background-color: var(--Purple-600);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     top: 0;
+    position: absolute;
     z-index: 10;
+}
+
+.espacio-letra{
+    display: none;
 }
 
 .text-gray{
@@ -46,17 +56,37 @@
 }
 
 .profile-image{
+    width: 80px;
     border-radius: 50%;
     border: 5px solid white;
 }
 
 .jeremy-container-footer{
-    height: 100px;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: var(--Navy-900);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    position: absolute;
     bottom: 0;
     z-index: 5;
+}
+
+.top ,.top2, .top3{
+    margin-top: 35px;
+}
+
+.footer-second{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.jeremy-text{
+    font-size: 22px;
 }
 
 .design{
@@ -71,14 +101,21 @@
 .card-container-color{
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    position: absolute;
+    top: 0;
     z-index: 0;
 }
 
 .card-container-footer{
     background-color: var(--Navy-900);
     border-radius: 18px;
-    z-index: 15;
+    position: absolute;
+    z-index: 1;
     bottom: 0;
+}
+
+.icon__opcion{
+    
 }
 
 .work-color{
@@ -109,26 +146,74 @@
 @media (min-width: 768px) {
 
     .jeremy-container{
-        height: 500px;
-        border: 1px solid white;
+        height: 530px;
+        position: relative;
     }
 
     .jeremy-container-header{
-        height: 300px;
-
+        height: 350px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 40px;
+        padding-left: 40px;
+        border-radius: 20px;
+        position: relative;
+        z-index: 1;
     }
+
+    .espacio-letra{
+        display: blok;
+    }
+
+    .profile-image{
+        width: 100px;
+    }
+
     .jeremy-container-footer{
-        height: 160px;
-        display: flex;
-        justify-content: flex-start;
+        height: 200px;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        z-index: 0;
+    }
+
+    .top{
+        padding-top: 40px;
+    }
+
+    .jeremy-text{
+        margin-top: 10px;
+        margin-left: 30px;
+        font-size: 15px;
     }
 
     .card-container-footer{
         height: 250px;
     }
 
+    .footer-second{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
     .second-container{
         margin-top: 5%;
-        border: 10px solid white;
     }
+
+    .icon__opcion{
+        width: 80px;
+    }
+
+    .palabra{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+    .horas{
+        font-size: 60px;
+        font-weight: 300;
+    }
+
 }
