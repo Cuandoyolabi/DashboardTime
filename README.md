@@ -1,7 +1,7 @@
 # DashboardTime
 
 # Descripion
-jugando y probando
+Creando un proyecto en 
 
 
 # Link del demo
